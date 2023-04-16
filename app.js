@@ -23,7 +23,7 @@ const gameData = {
     dealCard: 0, // 딜러 카드의 총합
     myCard: 0, // 내 카드의 총합
     myMoney: 500, // 내 현재 금액
-    myBetting: 0, // 내 배팅 합계
+    myBetting: 0, // 내 베팅 합계
     myScore: 0 // 나의 점수
 }
 
@@ -74,7 +74,7 @@ let $betting = document.querySelector('#betting')
 let $betMoney = document.getElementById('betting-text-money');
 let $poMoney = document.getElementById('pocket-text-money');
 
-// 배팅 실시간 설정
+// 베팅 실시간 설정
 let bett = 0;
 $betting.addEventListener('click', e => {
     if (!e.target.matches('input')) return;
